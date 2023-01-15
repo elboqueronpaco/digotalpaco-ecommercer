@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../hocs/Layout'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <Layout>
+      <h1>Page home</h1>
+    </Layout>
   )
 }
 
