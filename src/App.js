@@ -1,9 +1,12 @@
-
+import { Provider } from "react-redux";
+import store from './store'
 function App() {
   return (
-    <div className="text-blue-600">
-      app
-    </div>
+    <Provider store={store}>
+      <div className="text-blue-600">
+        app
+      </div>
+    </Provider>
   );
 }
 
