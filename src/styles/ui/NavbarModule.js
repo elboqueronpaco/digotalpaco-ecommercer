@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { colors } from '../../themes/colors';
 import { breakpoints } from '../../themes/grid';
 
 export const NavbarModule = styled.nav`
@@ -19,9 +18,18 @@ export const NavbarModule = styled.nav`
     @media screen and (min-width: ${breakpoints.md}) {
     position: static;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    gap: 16px;
     background-color: transparent;
     align-items: center;
     padding-left: 0;
     }
+`
+export const NavAuth = styled.nav`
+    position: static;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-color: red;
 `

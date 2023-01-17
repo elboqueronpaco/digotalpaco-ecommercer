@@ -11,10 +11,12 @@ export const HeaderModule = styled.header`
     border-bottom: thin solid #4f46e5;
     background-color: #fff;
     z-index: 10;
+    font-size: 13px;
 `
 export const HeaderContainer = styled(Container)`
     display: flex;
     //background-color: aliceblue;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 `

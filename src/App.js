@@ -8,6 +8,8 @@ import ServicePage from "./containers/ServicePage";
 import BlogPage from "./containers/BlogPage";
 import CoursesPage from "./containers/CoursesPage";
 import ContactPage from "./containers/ContactPage";
+import SignInPage from "./containers/SignInPage";
+import SignUpPage from "./containers/SignUpPage";
 function App() {
   return (
     <Provider store={store}>
@@ -20,6 +22,8 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/courses" element={<CoursesPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/auth/sign-in" element={<SignInPage />} />
+          <Route path="/auth/sign-up" element={<SignUpPage />} />
         </Routes>
       </Router>
     </Provider>
